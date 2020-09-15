@@ -95,6 +95,20 @@
 - Strangler pattern
 - Sidecar pattern
 
+### Domain Based Decomposition:
+
+#### Data Domains:
+- Driven by the data domain model itself
+- Undelying schema "unimportant"
+- Focus on data patterns
+
+#### Data Domain Design:
+- Domain-driven design
+- Start with the model, not the datastore
+- Evaluate actions
+- Build the service, contract first
+
+
 
 
 
