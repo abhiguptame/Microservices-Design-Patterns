@@ -17,6 +17,12 @@
 - Operational components
 - Diagnostic components
 
+## Cloud Native
+- Architectural style
+- Designed to facilitate operating in the cloud
+- Focuses on portable and scalable applications
+- Can be run in single datacenter
+
 ## Service Discovery:
 - Problem: What service do I call?
 - Central location of all services
@@ -48,12 +54,6 @@
 - Build contracts
 - Implement contracts
 - Maintain passivity as long as client is needed
-
-## Cloud Native
-- Architectural style
-- Designed to facilitate operating in the cloud
-- Focuses on portable and scalable applications
-- Can be run in single datacenter
 
 ## Atomic Transaction Microservices:
 - Gurantee atomicity, consistency, isolation, durability (ACID) transactions across domains.
