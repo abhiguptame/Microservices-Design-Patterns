@@ -6,10 +6,10 @@
 - Not monolithic service artifacts
 
 ## Service Types:
-- Data service
-- Business service
-- Translation service
-- Edge service
+- Data service : Connects to data source.
+- Business service : Higher level of abstraction built over data service.
+- Translation service : is any abstraction on third party operation that we may need to encapsulate.
+- Edge service : Responsible for servicing data to user or external services.
 
 ## Platform:
 - Runtime for services
