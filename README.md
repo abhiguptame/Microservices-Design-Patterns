@@ -84,6 +84,18 @@
 - Datastore distributes with the service
 - Datastore scales proportionally to the service
 
+## Decomposition Patterns:
+
+### Functional Use Patterns:
+- Domain based
+- Business process based
+- Atomic transaction based
+
+### Decomposition Strategies:
+- Strangler pattern
+- Sidecar pattern
+
+
 
 
 
