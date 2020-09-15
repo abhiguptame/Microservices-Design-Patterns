@@ -23,6 +23,11 @@
 - Focuses on portable and scalable applications
 - Can be run in single datacenter
 
+## Why Cloud Native & Microservices Go Together:
+- Scalability
+- Can run one without the other 
+- Distinct concepts, often considered the same
+
 ## Service Discovery:
 - Problem: What service do I call?
 - Central location of all services
