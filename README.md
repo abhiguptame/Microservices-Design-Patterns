@@ -61,6 +61,24 @@
 - Force blocking until commit
 - Don't use distributes transactions
 
+## Business Process Domain:
+- Provide higher-level business functionality
+- Allow us to encapsulate related domains
+- No datasource access
+- Distinct functional uses
+
+## Process Aggregator:
+- Problem: We have serveral business processes that must be called together and have a composite payload.
+- Aggregator provides clients a single API to call 
+- Can introduce its own process logic
+- Can cause long blocking calls
+
+## Single Service, Single Database:
+- Problem: Scalability needs between database and service are related.
+- Each service implementation gets its own datastore
+- Datastore distributes with the service
+- Datastore scales proportionally to the service
+
 
 
 
