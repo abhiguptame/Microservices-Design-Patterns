@@ -48,12 +48,6 @@
 - No datasource access
 - Distinct functional uses
 
-## Single Service, Single Database:
-- Problem: Scalability needs between database and service are related.
-- Each service implementation gets its own datastore
-- Datastore distributes with the service
-- Datastore scales proportionally to the service
-
 ## 1. Decomposition Patterns:
 
 ### Functional Use Patterns:
@@ -169,5 +163,11 @@
 - Edge is more flexible for new clients
 - Gateway has less moving points
 
+## 3. Data Patterns:
 
+## Single Service Database (Single Service, Single Database):
+- Problem: Scalability needs between database and service are related.
+- Each service implementation gets its own datastore
+- Datastore distributes with the service
+- Datastore scales proportionally to the service
 
