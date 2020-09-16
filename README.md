@@ -134,7 +134,12 @@
 - Single layer that proxies, mutates or limits call
 - Can become a single point of failure
 
-
+### Mutation Behaviors:
+- Can simply proxy
+- Can decorate
+- Can aggregate
+- Can limit access
+- Movement Buffer
 
 
 
