@@ -165,9 +165,16 @@
 
 ## 3. Data Patterns:
 
-## Single Service Database (Single Service, Single Database):
+### Single Service Database Pattern (Single Service, Single Database):
 - Problem: Scalability needs between database and service are related.
 - Each service implementation gets its own datastore
 - Datastore distributes with the service
 - Datastore scales proportionally to the service
+
+### Shared Service Database Pattern:
+- All data domains exist within a single database
+- Data distribution should be handled by the database
+- Break data domains into schemas or similar constructs
+- User don't span schemas
+- Data Domains connect to single schema
 
