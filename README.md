@@ -128,6 +128,12 @@
 - Schedule it to deploy with the appropriate services
 - Functionality appears without embedding it
 
+## Gateway/ API Gateway Pattern:
+- Problem: Client ability to call any service can create chaos
+- Gateway provides a facade/proxy
+- Single layer that proxies, mutates or limits call
+- Can become a single point of failure
+
 
 
 
