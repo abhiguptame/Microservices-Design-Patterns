@@ -152,12 +152,22 @@
 
 
 ### Edge Pattern:
+- Problem: Client use varies by platform and scaling a gateway presents wasted resources or clients need special business logic.
+- Client-specific (Mobile, Web, etc.  ) "gateways".
+- Focus on isolating calls for client systems.
 
 #### Edge Design:
 - Identify client
 - Build contracts
 - Implement contracts
 - Maintain passivity as long as client is needed
+
+### Gateway vs. Edge:
+- Similar but different
+- Edge targets clients
+- Edge is more scalable
+- Edge is more flexible for new clients
+- Gateway has less moving points
 
 
 
