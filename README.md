@@ -141,5 +141,11 @@
 - Can limit access
 - Movement Buffer
 
+### Strategy:
+- Define Contracts
+- Expose APIs for those contracts, client focused
+- Adhere to strict version control and passive changes only
+- Implement the gateway to call our services and our clients to call the gateway
+
 
 
