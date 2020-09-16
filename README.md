@@ -28,26 +28,6 @@
 - Can run one without the other 
 - Distinct concepts, often considered the same
 
-## Service Discovery:
-- Problem: What service do I call?
-- Central location of all services
-- Advertise what they offer 
-- Find what we need
-- Consume the URI from the discovery engine, not config
-
-## Logging:
-- Problem: We need to know what is going on?
-- Logging is invaluable in operations.
-- Logging must be consistent.
-- Logging must be structured.
-- Logging must share a taxonomy.
-
-## Business Process Domain:
-- Provide higher-level business functionality
-- Allow us to encapsulate related domains
-- No datasource access
-- Distinct functional uses
-
 ## 1. Decomposition Patterns:
 
 ### Functional Use Patterns:
@@ -190,6 +170,25 @@
 - Eventual consistency is a must
 - Event-based models
 
+### Asynchronous Eventing Pattern:
+- Problem: Some processes cannot be done in real time
+- Service API to trigger event
+- Event can cascade asynchronously from API
+- Event can trigger from messaging
+- Very powerful in distributed systems
 
+## 4. Operational Patterns:
 
+### Service Discovery Pattern:
+- Problem: What service do I call?
+- Central location of all services
+- Advertise what they offer 
+- Find what we need
+- Consume the URI from the discovery engine, not config
 
+### Logging Pattern:
+- Problem: We need to know what is going on?
+- Logging is invaluable in operations.
+- Logging must be consistent.
+- Logging must be structured.
+- Logging must share a taxonomy.
