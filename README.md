@@ -224,6 +224,21 @@
 - Every log message should embed the trace ID through structure logging with common taxonomy.
 - Leverage tracing tools and application performance management (APM) to visualize
 
+### External Configuration Pattern:
+
+#### Externalized Config:
+- Use consistent tooling
+- Use consistent naming
+- Err on the side of externalization
+- Protect secrets
+
+#### How to use Externalized Config:
+- Config is injected or retrieved
+- Application utilizes externalized value in favor of embedded values; however, defaults can be useful
+- Common libraries or tooling helps
+- Read, config, and act.
+
+
 ### Service Discovery Pattern:
 - Problem: What service do I call?
 - Central location of all services
