@@ -42,23 +42,11 @@
 - Logging must be structured.
 - Logging must share a taxonomy.
 
-## Edge Design:
-- Identify client
-- Build contracts
-- Implement contracts
-- Maintain passivity as long as client is needed
-
 ## Business Process Domain:
 - Provide higher-level business functionality
 - Allow us to encapsulate related domains
 - No datasource access
 - Distinct functional uses
-
-## Process Aggregator:
-- Problem: We have serveral business processes that must be called together and have a composite payload.
-- Aggregator provides clients a single API to call 
-- Can introduce its own process logic
-- Can cause long blocking calls
 
 ## Single Service, Single Database:
 - Problem: Scalability needs between database and service are related.
@@ -128,24 +116,48 @@
 - Schedule it to deploy with the appropriate services
 - Functionality appears without embedding it
 
-## 2. Gateway/ API Gateway Pattern:
+## 2. Integration Patterns:
+
+### Gateway/ API Gateway Pattern:
 - Problem: Client ability to call any service can create chaos
 - Gateway provides a facade/proxy
 - Single layer that proxies, mutates or limits call
 - Can become a single point of failure
 
-### Mutation Behaviors:
+#### Mutation Behaviors:
 - Can simply proxy
 - Can decorate
 - Can aggregate
 - Can limit access
 - Movement Buffer
 
-### Strategy:
+#### Strategy:
 - Define Contracts
 - Expose APIs for those contracts, client focused
 - Adhere to strict version control and passive changes only
 - Implement the gateway to call our services and our clients to call the gateway
+
+### Process Aggregator Pattern:
+- Problem: We have serveral business processes that must be called together and have a composite payload.
+- Aggregator provides clients a single API to call 
+- Can introduce its own process logic
+- Can cause long blocking calls
+
+#### Aggregator Design:
+- Determines the business process
+- Determines the processing rules
+- Design a consolidated model
+- Design an API for the actions on that model
+- Wire the service and implement the integral processing
+
+
+### Edge Pattern:
+
+#### Edge Design:
+- Identify client
+- Build contracts
+- Implement contracts
+- Maintain passivity as long as client is needed
 
 
 
