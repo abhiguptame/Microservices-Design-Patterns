@@ -196,6 +196,34 @@
 - Correlating of logs
 - Indexing of logs
 
+### Metrics Aggregation Patterns:
+- Problem: Need to see what is going on with the system
+- Taxonomy
+- Standard libraries
+- Metrics shipping
+- Dashboards
+
+#### Get All Metrices:
+- Build high-level dashboards
+- Build detailed dashboards
+- Inject events, especially deployments
+- Trace alarms on our graphs
+- Ensure we have runbooks for all alarms
+
+### Tracing Patterns:
+
+#### Tracing:
+- Problem: Call stacks span processes, so code traces are less valuable
+- Tracing gives us a way to recreate the call stack 
+- Should span from the edge to the database
+- No call is lost
+
+#### How to implement Tracing?
+- Use standard-based approaches
+- Inject the entry point to our system 
+- Every log message should embed the trace ID through structure logging with common taxonomy.
+- Leverage tracing tools and application performance management (APM) to visualize
+
 ### Service Discovery Pattern:
 - Problem: What service do I call?
 - Central location of all services
