@@ -178,3 +178,18 @@
 - User don't span schemas
 - Data Domains connect to single schema
 
+### Command Query Responsibility Segregation (CQRS) Pattern:
+#### What is CQRS?
+- Multi-model bounded contexts
+- Multi-interface operations, write versus read
+- Divergence from simple CRUD
+- Dramatically increases complexity
+
+#### When does CQRS make sense?
+- Task-based UI operations
+- Eventual consistency is a must
+- Event-based models
+
+
+
+
