@@ -159,6 +159,7 @@
 - Data Domains connect to single schema
 
 ### Command Query Responsibility Segregation (CQRS) Pattern:
+
 #### What is CQRS?
 - Multi-model bounded contexts
 - Multi-interface operations, write versus read
@@ -179,6 +180,22 @@
 
 ## 4. Operational Patterns:
 
+### Log Aggregation Pattern:
+
+#### Logging:
+- Problem: We need to know what is going on?
+- Logging is invaluable in operations.
+- Logging must be consistent.
+- Logging must be structured.
+- Logging must share a taxonomy.
+
+#### Log Aggregation:
+- Problem: Logs are everywhere
+- Aggregation of logs
+- Parsing of logs
+- Correlating of logs
+- Indexing of logs
+
 ### Service Discovery Pattern:
 - Problem: What service do I call?
 - Central location of all services
@@ -186,9 +203,3 @@
 - Find what we need
 - Consume the URI from the discovery engine, not config
 
-### Logging Pattern:
-- Problem: We need to know what is going on?
-- Logging is invaluable in operations.
-- Logging must be consistent.
-- Logging must be structured.
-- Logging must share a taxonomy.
