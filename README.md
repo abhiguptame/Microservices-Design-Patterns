@@ -66,7 +66,7 @@
 - Datastore distributes with the service
 - Datastore scales proportionally to the service
 
-## Decomposition Patterns:
+## 1. Decomposition Patterns:
 
 ### Functional Use Patterns:
 - Domain based
@@ -128,7 +128,7 @@
 - Schedule it to deploy with the appropriate services
 - Functionality appears without embedding it
 
-## Gateway/ API Gateway Pattern:
+## 2. Gateway/ API Gateway Pattern:
 - Problem: Client ability to call any service can create chaos
 - Gateway provides a facade/proxy
 - Single layer that proxies, mutates or limits call
